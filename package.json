@@ -1,0 +1,25 @@
+{
+  "name": "manpreet-challenge-frontend-100",
+  "version": "1.0.0",
+  "description": "This is the code challenge for anyone interested in being a Web Developer at Igloo.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass --output-style expanded src/styles/main.scss build/styles/style.css --source-map build/styles/style.css.map -w",
+    "compress:css": "node-sass build/styles/style.css build/styles/style.min.css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/montygoldy/Challenge-Frontend-100.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/montygoldy/Challenge-Frontend-100/issues"
+  },
+  "homepage": "https://github.com/montygoldy/Challenge-Frontend-100#readme",
+  "dependencies": {
+    "autoprefixer": "^8.5.2",
+    "node-sass": "^4.9.0"
+  }
+}
