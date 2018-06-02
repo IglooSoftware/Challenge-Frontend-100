@@ -1,0 +1,17 @@
+section.slider-section {
+  width: 100%;
+  height: 278px;
+}
+
+main {
+  h2 {
+    text-align: center;
+    font-weight: 300;
+    margin: 1.5rem 0;
+  }
+  section.stories {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+}

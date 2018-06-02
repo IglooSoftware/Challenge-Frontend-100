@@ -8,96 +8,142 @@
   <title>Manpreet web dev challenge </title>
   <!-- favicon -->
   <link rel="shortcut icon" href="">
-  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
   <!-- Font awesome cdn-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <!-- Main stylesheet minified -->
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
   <header class="header">
-    <!-- Navigation -->
-    <nav class="main-nav">
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Dashboard</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Campaigns</a>
-        </li>
-        <li>
-          <a href="#">Files</a>
-        </li>
-        <li>
-          <a href="#">Departments</a>
-        </li>
-        <li>
-          <a href="#">People</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- Search bar -->
-    <form action="#" class="search">
-      <input type="text" class="search__input" placeholder="Search Everywhere">
-      <button class="search__button">
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </button>
-    </form>
+    <div class="container flex">
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <ul class="main-nav__list flex">
+          <li class="main-nav__list-item">
+            <a href="#" class="main-nav__list-item-link active">Home</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#" class="main-nav__list-item-link">Dashboard</a>
+          </li>
+          <li class="main-nav__list-item ">
+            <a href="# " class="main-nav__list-item-link">About</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#" class="main-nav__list-item-link">Campaigns/Brand</a>
+          </li>
+          <li class="main-nav__list-item ">
+            <a href="# " class="main-nav__list-item-link">Files</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#" class="main-nav__list-item-link">Departments</a>
+          </li>
+          <li class="main-nav__list-item ">
+            <a href="#" class="main-nav__list-item-link">People</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Mobile Nav -->
+      <div class="mobile-nav-toggle">
+        <span></span>
+      </div>
+
+      <!-- Search bar -->
+      <form action="# " class="header__search">
+        <div class="group">
+          <input type="text " class="header__input " placeholder="Search Everywhere ">
+          <button class="header__button ">
+            <i class="fa fa-search " aria-hidden="true "></i>
+          </button>
+        </div>
+      </form>
+    </div>
   </header>
 
-  <section class="slider">
-
+  <section class="slider-section">
+    <div class="slider">
+      <ul class="slider__list">
+        <li>
+          <img src="images/slider/slide-1.jpg" />
+          <div class="overlay"></div>
+          <div class="caption">
+            <div class="heading">Welcome to the Community</div>
+            <span>Share, connect and collaborate</span>
+          </div>
+        </li>
+        <li>
+          <img src="images/slider/slide-2.jpg" />
+          <div class="overlay"></div>
+          <div class="caption">
+            <div class="heading">Lorem Ipsum</div>
+            <span>Share, connect and collaborate</span>
+          </div>
+        </li>
+        <li>
+          <img src="images/slider/slide-3.jpg" />
+          <div class="overlay"></div>
+          <div class="caption">
+            <div class="heading">Lorem ipsum</div>
+            <span>Share, connect and collaborate</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="slider-triggers">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </section>
 
-  <main class="content">
-    <h2>Stories from Us</h2>
-    <article>
-      <span class="article__date">May 20,2015</span>
-      <h4 class="article__heading"> Corporate Announcement</h4>
-      <figure class="article__image">
-        <img src="images/corporate_announcement.jpg" alt="Corporate Announcement" />
-      </figure>
-      <p class="article__body">We want to ensure you are comfortable with our new and awesome platform. Since we have launched our new community we
-        have been receiving excellent feedback, but we would like to personally hear from you.</p>
-      <a class="article__link" href="#">Read More</a>
-    </article>
-    <article>
-      <span class="article__date">July 18,2015</span>
-      <h4 class="article__heading">New Office Location</h4>
-      <figure class="article__image">
-        <img src="images/new_office_location.jpg" alt="New office Location" />
-      </figure>
-      <p class="article__body">We have officially moved into our new office location! It has been a long time coming but we have survived and now
-        we are settling in. </p>
-      <a class="article__link" href="#">Read More</a>
-    </article>
-    <article>
-      <span class="article__date">August 26,2015</span>
-      <h4 class="article__heading">Connect with Coworkers</h4>
-      <figure class="article__image">
-        <img src="images/connect_with_coworker.jpg" alt="Connect with Coworkers" />
-      </figure>
-      <p class="article__body">We are looking into using this new platform to further assist you in connecting with your coworkers. We are hoping
-        this tool will rock!</p>
-      <a class="article__link" href="#">Read More</a>
-    </article>
+  <main class="content ">
+    <div class="container">
+      <h2 class="text-center">Stories from Us</h2>
+      <section class="stories">
+        <article class="article text-center">
+          <span class="article__date ">May 20,2015</span>
+          <h4 class="article__heading "> Corporate Announcement</h4>
+          <figure class="article__image ">
+            <img src="images/corporate_announcement.jpg " alt="Corporate Announcement " />
+          </figure>
+          <p class="article__body ">We want to ensure you are comfortable with our new and awesome platform. Since we have launched our new community
+            we have been receiving excellent feedback, but we would like to personally hear from you.</p>
+          <a class="article__link text-center" href="# ">Read More</a>
+        </article>
+        <article class="article text-center">
+          <span class="article__date ">July 18,2015</span>
+          <h4 class="article__heading ">New Office Location</h4>
+          <figure class="article__image ">
+            <img src="images/new_office_location.jpg " alt="New office Location " />
+          </figure>
+          <p class="article__body ">We have officially moved into our new office location! It has been a long time coming but we have survived and
+            now we are settling in. </p>
+          <a class="article__link text-center" href="# ">Read More</a>
+        </article>
+        <article class="article text-center">
+          <span class="article__date ">August 26,2015</span>
+          <h4 class="article__heading ">Connect with Coworkers</h4>
+          <figure class="article__image ">
+            <img src="images/connect_with_coworker.jpg " alt="Connect with Coworkers " />
+          </figure>
+          <p class="article__body ">We are looking into using this new platform to further assist you in connecting with your coworkers. We are hoping
+            this tool will rock!</p>
+          <a class="article__link text-center" href="# ">Read More</a>
+        </article>
+      </section>
+    </div>
   </main>
 
   <footer class="footer">
-    <p>&copy; 2016 </p>
-    <img src="images/logo.jpg" alt="Igloo Logo">
+    <div class="container flex">
+      <p>&copy; 2016 </p>
+      <img class="footer__logo" src="images/logo.jpg " alt="Igloo Logo ">
+    </div>
   </footer>
   <!-- Minified jquery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
   <!-- Minified main script file-->
-  <script src="scripts/main.js"></script>
+  <script src="scripts/main.js "></script>
 </body>
 <html>

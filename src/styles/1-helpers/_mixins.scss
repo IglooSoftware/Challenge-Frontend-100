@@ -1,5 +1,11 @@
 //Breakpoints for different screens
 @mixin respond($breakpoint) {
+  @if $breakpoint==xSmall {
+    @media only screen and (max-width: 28.15em) {
+      @content
+    }
+    ;
+  }
   @if $breakpoint==phone {
     @media only screen and (max-width: 37.5em) {
       @content
