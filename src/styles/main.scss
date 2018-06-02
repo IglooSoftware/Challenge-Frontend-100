@@ -1,0 +1,5 @@
+@import "1-helpers/1-helpers"; // contains sass mixins, variables, functions 
+@import "2-base/2-base"; // contains reset, base styling 
+@import "3-layout/3-layout"; // contains styling for common page layout like header, footer etc
+@import "4-modules/4-modules"; // contains reusable code block styling 
+@import "5-templates/5-templates"; // contains each page specific styling
