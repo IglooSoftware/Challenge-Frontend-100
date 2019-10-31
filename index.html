@@ -4,92 +4,121 @@
 
     <title> web dev challenge </title>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <style>
-    h1{
-      font-size:14px;
-      font-weight:normal;
-      margin:0 0 -1.45em;
-    }
-    h4{
-      font-size:24px;
-    }
-    li {
-        display: inline-block;
-        text-align: left;
-    }
-    a{
-      color:#000;
-    }
-    a:hover
-    {
-      color:
-    }
-    span {
-        display: inline-block;
-        width: 300px;
-        margin-top:20px;
-        margin-left: 0px;
-        margin-bottom: 20px;
-        margin-right:0;
-        overflow: hidden;
-    }
-    body {
-        font-family: 'Oswald', sans-serif;
-    }
-    #content{
-      width: 1100px;
-      margin: 0 auto;
-    }
-    .footer{
-      background:#000;
-      color:#FFFFFF;
-      text-align:center;
-    }
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
 
+    <style>
+      h1{
+        font-size:14px;
+        font-weight:normal;
+        margin:0 0 -1.45em;
+      }
+      h2 {
+          font-size: 28px;
+          font-weight: 300;
+          margin:10px 0;
+      }
+      li {
+          display: inline-block;
+          text-align: left;
+      }
+      a{
+        color:#000;
+      }
+      a.active,
+      a:hover{
+          color: #4a90e2;
+      }
+      a:hover
+      {
+        color:
+      }
+      article {
+          display: inline-block;
+          width: 300px;
+          margin-top:20px;
+          margin-left: 0px;
+          margin-bottom: 20px;
+          margin-right:0;
+          overflow: hidden;
+      }
+      body {
+          font-family: 'Open Sans', sans-serif;
+      }
+      #content{
+        width: 1100px;
+        margin: 0 auto;
+      }
+      #n-primary li {
+          display: inline-block;
+          text-align: left;
+      }
+      #n-primary li a {
+          text-decoration: none;
+      }
+      header #search span i{color: #666;}
+      .footer{
+          background: #171717;
+      }
+      .footer p{
+          margin: 0;
+          font-size: 11px;
+          font-weight: 100;
+          color: #ccc;
+          margin-top: 6px;
+      }
+      .bannerButton {
+          width: 15px;
+          height: 15px;
+          padding: 0;
+          border-radius: 50%;
+          border: 2px solid white;
+          background:white;
+          transition: all 0.3s;
+      }
     </style>
   </head>
   <body>
-      <div id="content">
-  <div id ="n-primary">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Dashboard</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Campaigns</a></li>
-    <li><a href="#">Files</a></li>
-    <li><a href="#">Departments</a></li>
-    <li><a href="#">People</a></li>
-  </div>
-  <div id="search">
-  </div>
+      <main id="content">
+        <header>
+        <div id ="n-primary">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Campaigns</a></li>
+          <li><a href="#">Files</a></li>
+          <li><a href="#">Departments</a></li>
+          <li><a href="#">People</a></li>
+        </div>
+        <div id="search"><span><i class="fa fa-search" aria-hidden="true"></i></span> <input type="text" placeholder="Search everywhere"></div>
+      </header>
 
-  <div class="slider">
-    <span>
-        <h1>May 20,2015</h1>
-        <h4 style="margin: 35px 0 20px;"> Corporate Announcement</h4>
-        <img src="http://lorempixel.com/400/200/sports" />
-        <p> Lorem Ipsum</p>
-        <a href="#">Read More</a>
-    </span>
-    <span>
-        <p>May 20,2015</p>
-        <h2> Corporate Announcement</h2>
-        <img src="http://lorempixel.com/400/200/cats" />
-        <p> Lorem Ipsum</p>
-        <a href="#">Read More</a>
-    </span>
-    <span>
-        <p>May 20,2015</p>
-        <h2> Corporate Announcement</h2>
-        <img src="http://lorempixel.com/400/200/transport" > </img>
-        <p> Lorem Ipsum</p>
-        <a href="#">Read More</a>
-    </span>
-    <p> &nbsp; </p>
-    <br />
-  </div>
-</div>
-  <div class="footer">
-    <p> Copyright 2016 </p>
-  </div>
+        <div class="banners">
+          <article>
+              <h1>May 20,2015</h1>
+              <h2> Corporate Announcement</h2>
+              <img src="http://lorempixel.com/400/200/sports" />
+              <p> Lorem Ipsum</p>
+              <a href="#">Read More</a>
+          </article>
+          <article>
+              <p>May 20,2015</p>
+              <h2> Corporate Announcement</h2>
+              <img src="http://lorempixel.com/400/200/cats" />
+              <p> Lorem Ipsum</p>
+              <a href="#">Read More</a>
+          </article>
+          <article>
+              <p>May 20,2015</p>
+              <h2> Corporate Announcement</h2>
+              <img src="http://lorempixel.com/400/200/transport" > </img>
+              <p> Lorem Ipsum</p>
+              <a href="#">Read More</a>
+          </article>
+        </div>
+      </main>
+    <footer class="footer">
+        <p>© 2016</p>
+        <img src="assets/community-footer-logo.jpg" alt="footer logo Igloo">
+    </footer>
   </body>
 <html>
